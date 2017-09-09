@@ -1,0 +1,5 @@
+name: UltimateMute
+author: LCraftPE
+version: 1.0.0
+main: UM\Main
+api: [3.0.0-ALPHA7]
