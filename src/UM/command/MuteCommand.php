@@ -45,10 +45,6 @@ class MuteCommand extends Command
             $sender->sendMessage("§cYou cannot put on mute ".$player->getName()." for 0 day, 0 hour and 0 minute");
             return false;           
         }
-        var_dump($d);
-        var_dump($h);
-        var_dump($min);
-        var_dump(time());
         $profile->setMute(($d * 86400) + ($h * 3600) + ($min * 60) + time());
         $sender->sendMessage("§7You have put on mute ".$player->getName()." for ".$d."d ".$h."h ".$min."min");
         $player->sendMessage("§cYou have been put on mute by ".$sender->getName()." for ".$d."d ".$h."h ".$min."min");
